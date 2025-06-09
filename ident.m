@@ -29,7 +29,7 @@ data = iddata(y, u, Ts, 'TimeUnit','s');
 yP123c = lsim(P123c, u, t);
 yPsitb = lsim(Psitb, u, t);
 
-% 5. Graficar -------------------------------------------------------------
+% % 5. Graficar -------------------------------------------------------------
 figure;
 plot(t, u, 'k:', 'LineWidth', 1.5); hold on;
 plot(t, y, 'b', 'LineWidth', 1);
@@ -65,5 +65,7 @@ ylabel('IAE acumulado');
 legend('IAE 123c', 'IAE SITb');
 title('Evolución del IAE en el tramo activo');
 grid on;
-fprintf('IAE total para P123c:   %.4f\n', IAE_123c_final);
-fprintf('IAE total para Psitbc:  %.4f\n', IAE_sitbc_final);
+
+
+fprintf('IAE total para P123c:   %.4f\n', IAE123c_acum(end))
+fprintf('IAE total para Psitbc:  %.4f\n', IAEsitbc_acum(end))
