@@ -65,8 +65,8 @@ ylabel('IAE acumulado');
 legend('IAE 123c', 'IAE SITb');
 title('Evolución del IAE en el tramo activo');
 grid on;
-Tmuestreo = 0.01;
-discret = c2d(Psitb, Tmuestreo, 'zoh');
-sisotool(discret);
+T
+discret = c2d(Psitb);
+sisotool;
 fprintf('IAE total para P123c:   %.4f\n', IAE123c_acum(end))
 fprintf('IAE total para Psitbc:  %.4f\n', IAEsitbc_acum(end))
