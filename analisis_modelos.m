@@ -42,7 +42,7 @@ yPsitb = lsim(Psitb, u, t);
 % % xlim([206. 230.6]);
 % grid on
 
-x 
+
 n_activos = sum((u == 20));
 yActivo = y(end - n_activos + 1 : end);
 tActivo = t(end - n_activos + 1 : end);
