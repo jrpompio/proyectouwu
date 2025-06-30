@@ -10,7 +10,8 @@ Psitb = tf(num, den, 'InputDelay', delay);
 Ts = 0.0265; 
 
 % Discretiza el modelo
-discret = c2d(Psitb, Ts, 'zoh');
+discret = c2d(Psitb, Ts, 'zoh')
 
 % Abre sisotool para el modelo discreto
-sisotool(discret);
+%sisotool(discret);
+
